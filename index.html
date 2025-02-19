@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    
+    <!-- Add AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>Sanket | Developer</title>
+    <meta name="keywords" content="sanket, developer, software engineer" />
+    <meta name="description" content="Sanket | Developer" />
+    <link rel="icon" type="image/png" href="./assets/devfolio-logo.png" />
+    <meta name="theme-color" content="#36d1dc" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Added Responsive Styles -->
+    <style>
+      /* Animations */
+      .skill-card, .project-wrapper__image, .cta-btn {
+        transition: all 0.3s ease;
+      }
+      
+      .skill-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      }
+
+      .cta-btn--hero:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      }
+
+      /* Responsive Media Queries */
+      @media (max-width: 768px) {
+        .hero-title {
+          font-size: 2.5rem;
+          line-height: 1.3;
+        }
+
+        .about-wrapper {
+          flex-direction: column;
+        }
+
+        .about-wrapper__image {
+          margin-bottom: 2rem;
+          max-width: 80%;
+        }
+
+        .row {
+          flex-direction: column;
+        }
+
+        .skills-wrapper {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      @media (max-width: 480px) {
+        .hero-title {
+          font-size: 2rem;
+        }
+
+        .skills-wrapper {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Hero Section with Animations -->
+    <div id="hero">
+      <section class="container">
+        <h1 class="hero-title" data-aos="fade-down" data-aos-delay="200">
+          Hi, my name is <span class="text-color-main name">Sanket</span>
+          <br />
+          I'm a Software Developer.
+        </h1>
+        <p class="hero-cta" data-aos="zoom-in" data-aos-delay="400">
+          <a class="cta-btn cta-btn--hero" href="#about">Get in touch</a>
+        </p>
+      </section>
+    </div>
+
+    <!-- About Section with Animations -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">About Me</h2>
+        <div class="row about-wrapper">
+          <!-- Profile Image -->
+          <div class="about-wrapper__image" data-aos="fade-right">
+            <img
+              class="img"
+              src="./assets/profile.jpg"
+              alt="Sanket's Profile Image"
+              width="450"
+              height="350"
+              loading="lazy"
+            />
+          </div>
+    
+          <!-- About Information -->
+          <div class="about-wrapper__info" data-aos="fade-left" data-aos-delay="200">
+            <p class="about-wrapper__info-text">
+              Hi, I'm Sanket, a Computer Science undergraduate at IIIT Bhagalpur with a passion for problem-solving and software development. I’ve solved 1000+ problems on LeetCode, refining my DSA and competitive programming skills.
+            </p>
+            <p class="about-wrapper__info-text">
+              I am ServiceNow CSA & CAD certified with experience in web development, problem-solving, and software engineering. I enjoy building scalable and efficient solutions that solve real-world problems.
+            </p>
+          
+    
+            <!-- Resume Link -->
+            <span class="about-wrapper__cta">
+              <a
+                href="https://drive.google.com/file/d/17XwvpTtT9OzzKsi43kKqB2rz6Yksokks/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="cta-btn cta-btn--resume"
+                data-aos="zoom-in"
+                data-aos-delay="400"
+              >
+                View Resume
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skills Section with Animations -->
+    <!-- Skills Section -->
+<section id="skills">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Skills</h2>
+    <div class="skills-wrapper">
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+        <i class="devicon-cplusplus-plain colored"></i>
+        <p>C++</p>
+      </div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="150">
+        <i class="devicon-c-plain colored"></i>
+        <p>C</p>
+      </div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+        <i class="devicon-javascript-plain colored"></i>
+        <p>JavaScript</p>
+      </div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="250">
+        <i class="devicon-html5-plain colored"></i>
+        <p>HTML5</p>
+      </div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+        <i class="devicon-css3-plain colored"></i>
+        <p>CSS3</p>
+      </div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="350">
+        <i class="devicon-react-original colored"></i>
+        <p>React</p>
+      </div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
+        <i class="devicon-nodejs-plain colored"></i>
+        <p>Node.js</p>
+      </div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="450">
+        <i class="devicon-express-original colored"></i>
+        <p>Express.js</p>
+      </div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="500">
+        <i class="devicon-python-plain colored"></i>
+        <p>Python</p>
+      </div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="550">
+        <i class="devicon-mongodb-plain colored"></i>
+        <p>MongoDB</p>
+      </div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="600">
+        <i class="devicon-mysql-plain-wordmark"></i>
+        <p>MySQL</p>
+      </div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="650">
+        <i class="devicon-git-plain colored"></i>
+        <p>Git</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Skills Section -->
+
+<!-- Projects Section -->
+<section id="projects">
+  <div class="container">
+    <div class="project-wrapper">
+      <h2 class="section-title dark-blue-text" data-aos="fade-up">Projects</h2>
+
+      <!-- Real Time Chat App -->
+      <article class="row" data-aos="fade-up">
+        <div class="project-wrapper__text">
+          <h3 class="project-wrapper__text-title">Real Time Chat App</h3>
+          <p class="project-wrapper__text-info">
+            The Real-Time Chat App is a web-based messaging platform that enables instant communication using WebSockets. It supports one-on-one chats, group messaging, user authentication, and notifications for a seamless experience. Built with JavaScript, Node.js, Express, and Socket.io, it ensures real-time data handling and responsive UI design. 🚀
+          </p>
+          <div class="project-wrapper__text-btns">
+            <a href="https://chatapp-6ovo.onrender.com" target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--hero cta-btn--projects">See Live</a>
+            <a href="https://github.com/sanketgit3345/chatApp" target="_blank" class="cta-btn text-color-main">Source Code</a>
+          </div>
+        </div>
+        <div class="project-wrapper__image" data-aos="zoom-in">
+          <a href="https://chatapp-6ovo.onrender.com" target="_blank" rel="noopener noreferrer">
+            <div class="thumbnail rounded">
+              <img src="./assets/chatapp.png" class="img-fluid" alt="Chat App Preview" loading="lazy">
+            </div>
+          </a>
+        </div>
+      </article>
+
+      <!-- Gaming Hub -->
+      <article class="row" data-aos="fade-up" data-aos-delay="200">
+        <div class="project-wrapper__text">
+          <h3 class="project-wrapper__text-title">Gaming Hub</h3>
+          <p class="project-wrapper__text-info">
+            The Gaming Hub is a web-based platform featuring four interactive games: Flappy Bird, Tic-Tac-Toe, Snake, and Whack-a-Mole. It provides a seamless gaming experience with a user-friendly interface and real-time gameplay. Built using HTML, CSS, and JavaScript, the platform ensures smooth performance across devices. This project highlights skills in game development, event handling, and UI/UX design. 🎮🚀
+          </p>
+          <div class="project-wrapper__text-btns">
+            <a href="https://sanketgit3345.github.io/Gaming-Hub/" target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--hero cta-btn--projects">See Live</a>
+            <a href="https://github.com/sanketgit3345/Gaming-Hub" target="_blank" class="cta-btn text-color-main">Source Code</a>
+          </div>
+        </div>
+        <div class="project-wrapper__image" data-aos="zoom-in" data-aos-delay="200">
+          <a href="https://sanketgit3345.github.io/Gaming-Hub/" target="_blank" rel="noopener noreferrer">
+            <div class="thumbnail rounded">
+              <img src="./assets/Blank 4 Grids Collage (1).png" class="img-fluid" alt="Gaming Hub Preview" loading="lazy">
+            </div>
+          </a>
+        </div>
+      </article>
+      <div class="container">
+        <div class="more-projects-content" data-aos="fade-up">
+          <h2 class="section-title">Want to See More Projects?</h2>
+          <p class="more-projects-subtitle">
+            Explore all my repositories on GitHub to see more of my work!
+          </p>
+          <a
+            href="https://github.com/sanketgit3345?tab=repositories"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="cta-btn cta-btn--github"
+          >
+            <i class="fab fa-github"></i> See All Projects
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+</section>
+<!-- End Projects Section -->
+
+
+    <!-- Contact Section -->
+
+<section id="contact">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Let's Connect</h2>
+    <p class="contact-subtitle" data-aos="fade-up" data-aos-delay="100">
+      Feel free to reach out for collaborations, opportunities, or just a friendly hello!
+    </p>
+
+    <div class="contact-cards" data-aos="fade-up" data-aos-delay="200">
+      <!-- Email Card -->
+      <div class="contact-card">
+        <i class="fas fa-envelope"></i>
+        <h3>Email</h3>
+        <p>sanket.gautam33245@gmail.com</p>
+        <a href="mailto:sanket.gautam33245@gmail.com" class="cta-btn cta-btn--contact">Send Email</a>
+      </div>
+
+      <!-- GitHub Card -->
+      <div class="contact-card">
+        <i class="fab fa-github"></i>
+        <h3>GitHub</h3>
+        <p>Check out my projects</p>
+        <a href="https://github.com/sanketgit3345" target="_blank" class="cta-btn cta-btn--contact">Visit GitHub</a>
+      </div>
+
+      <!-- LinkedIn Card -->
+      <div class="contact-card">
+        <i class="fab fa-linkedin"></i>
+        <h3>LinkedIn</h3>
+        <p>Let's connect professionally</p>
+        <a href="https://www.linkedin.com/in/sanket-444b01239/" target="_blank" class="cta-btn cta-btn--contact">Visit LinkedIn</a>
+      </div>
+
+      <!-- Phone Card -->
+      <div class="contact-card">
+        <i class="fas fa-phone"></i>
+        <h3>Phone</h3>
+        <p>+91 6386961854</p>
+        <a href="tel:+916386961854" class="cta-btn cta-btn--contact">Call Me</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- AOS Animation Initialization -->
+    <!-- AOS Initialization -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: false,  // Allow animations to restart
+    offset: 120,
+    easing: 'ease',
+    mirror: false  // Allow re-animating when scrolling back up
+  });
+</script>
+
+    <!-- Existing scripts -->
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear()
+    </script>
+    <script src="./javascript/vanilla-tilt.min.js"></script>
+    <script type="text/javascript" src="./javascript/valtilt.js"></script>
+  </body>
+</html>
